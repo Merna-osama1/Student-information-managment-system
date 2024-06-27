@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html" class="active">About Us</a></li>
+				<li><a href="Register.html">Register</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="Student_Information.html">Student Information</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			About EELU
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+
+	<!-- About section starts from here -->
+	<section id="about-container">
+		<div class="about-text">
+			<h2>
+				EELU History
+			</h2>
+			<p>
+				The Egyptian E-Learning University has been established by Republican Decree No. 233 of 2008 as the first Egyptian university that adopts the E-learning concept.
+
+
+In 2018, The University has been transformed from a private university to a national one due to the Presidential Decree No. 71; aiming to provide all Egypt governorates with High-quality educational services at affordable costs.
+The university works to supply the labor market with highly-skilled individuals who are able to deal with emerging communications and be aware of the latest scientific developments in our specialized fields.
+
+EELU is the only Egyptian university that has been able to release their students from the obligations of  place and time factors while maintaining communication and interaction between lecturers and students, via providing the students with flexible educational opportunities based on (E-learning and self-learning) tools, and with contemporary curricula that are connected with the labor market needs.
+
+Since 2008, EELU has been able to graduate hundreds of students who have finished their studies at the bachelor's and master's levels.
+			</p>
+
+			
+		</div>
+	
+		
+	
+	<div class="about-text">
+		<h2>
+			EELU Vision
+		</h2>
+		<p>
+			A leading university in providing high-quality education via using E-learning methodologies through building up future leaders who are able to affect positively on their countries socially & economically  in Egypt and all over the world.
+		</p>
+
+		
+	</div>
+	
+	<div class="about-text">
+		<h2>
+			EELU Mission
+		</h2>
+		<p>
+			EELU seeks to provide high-quality education and training services to supply the labor market with individuals who are able to compete and deal with advanced technologies through creating a sustainable improvement in both teaching and learning environment.
+		</p>
+
+		
+	</div>
+	
+	
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle('slow');
+    $("#div3").fadeToggle(5000);
+	$("#div4").fadeToggle(6000);
+	$("#div5").fadeToggle(7000);
+	$("#div6").fadeToggle(8000);
+  });
+});
+</script>
+
+	<div class="about-text">
+		<h2>
+			<button>Facts and figures</button><br><br>
+			
+		</h2>
+
+		<div id="div1" style="width:800px;height:800px;display:none;">
+		<img src="img/eelu_1.png" alt="" class="eelu1">
+		</div>
+		
+		<p class="subtitle">Computer science Graduates</p>
+		<div id="div2" style="width:800px;height:800px;display:none;">
+		<img src="img/eelu_2.png" alt=""></div>
+
+		<p class="subtitle">Business Administration graduates</p>
+		<div id="div3" style="width:800px;height:800px;display:none;">
+		<img src="img/eelu_3.png" alt=""></div>
+		
+		<p class="subtitle">E-learning diploma graduates</p>
+		<div id="div4" style="width:800px;height:800px;display:none;">
+		<img src="img/eelu_4.png" alt=""></div>
+
+		<div id="div5" style="width:800px;height:800px;display:none;">
+		<img src="img/eelu_5.png" alt=""></div>
+		
+
+		<div id="div6" style="width:800px;height:800px;display:none;">
+		<img src="img/eelu_6.png" alt=""></div>
+	</div>
+</section>
+<!-- About section ends from here -->
+
+
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="footer-col">
+			<h3>Contact information</h3>
+			<li>33 El Messaha Street,Dokki, Giza Governorate, Egypt</li>
+			<li>P.O Box 12611</li>
+			<li>16541 - +2 02 33318498</li>
+			<li>+2 02 37497928</li>
+			<li>info@eelu.edu.eg</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>EELU Faculties</h3>
+			<li>Faculty of Computer and Information Technology</li>
+			<li>Faculty of Business Administration and Commercial Studies</li>
+			<li>Faculty of Education Studies</li>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright © 2023 The National Egyptian E-learning University - EELU 
+			</p>
+			<div class="pro-links">
+				<div class="pro-links">
+          
+					<a href="https://www.facebook.com/egyptelu/" target="_blank"><i class="fab fa-facebook"></i></a> 
+					<a href="https://www.youtube.com/channel/UC6414bV4sgqhNH7vgEAs_TA" target="_blank"><i class="fab fa-youtube"></i></a>
+					<a href="https://twitter.com/EgyptElu" target="_blank"><i class="fab fa-twitter"></i></a>
+							</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>

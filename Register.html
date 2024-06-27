@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="Register.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="Register.html" class="active">Register</a></li>
+				<li><a href="courses.html">Courses</a></li>
+                <li><a href="Student_Information.html">Student Information</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- home section starts from here -->
+	<section id="about-home">
+		<h2>
+			Register for new Student  <br>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; & <br>
+			&emsp;&emsp; Students Record
+		</h2>
+	</section>
+	<!-- Home section ends from here -->
+	
+	
+	<!-- Records section starts from here -->
+
+	<section id="Records-section">
+	<table>
+        <!--Row-1-->
+        <tr>
+            <!--Column-1-->
+            <td>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                	<h3>Student Form</h3>
+					
+                  <!--div-1-->
+                    <div>
+                        <label>Full Name</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+                        <!--Input User Name-->
+                        <input type="text" name="userName" id="userName" placeholder="Enter the user Name">
+                    </div>
+					
+                    <!--div-2-->
+                    <div>
+                        <label>Rollno</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="rollNovalidationError" >This field is required</label>
+                        <!--Input Roll No-->
+                        <input type="text" name="rollNo" id="rollNo" placeholder="Enter the Roll number">
+                    </div>
+					
+                    <!--div-3-->
+                    <div>
+                        <label>Student Class</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="stdClassvalidationError">This field is required</label>
+                       <!--Input Student Class-->
+                        <input type="text" name="stdClass" id="stdClass" placeholder="Enter the Student Class">
+                    </div>
+					
+                    <!--div-4-->
+                    <div>
+                        <label>Student ID</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="sidvalidationError">This field is required</label>
+                        <!--Input Student ID-->
+                        <input type="text" name="sid" id="sid" placeholder="Enter the Student ID">
+                    </div>
+					
+                    <!--div-5-->
+                    <div>
+                        <label>Age</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="agevalidationError">This field is required</label>
+                        <!--Input Age-->
+                        <input type="number" name="age" id="age" placeholder="Enter the Age">
+                    </div>
+					
+                    <!--div-6-->
+                    <div class="form-action-buttons">
+                        <!--Input Button-->
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+			
+            <!--Column-2-->
+            <td>
+                <!--Nested Table-->
+                <table class="list" id="stdlist" style="background-color: skyblue;">
+                    <!--Table Head-->
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+                            <th>Full Name</th>
+                            <th> Roll no</th>
+                            <th>Class</th>
+                            <th>Student ID</th>
+                            <th>Age</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+	</section>
+	
+	<!-- Records section ends from here -->
+	<!-- Footer section starts from here -->
+		<footer>
+		<div class="footer-col">
+			<h3>Contact information</h3>
+			<li>33 El Messaha Street,Dokki, Giza Governorate, Egypt</li>
+			<li>P.O Box 12611</li>
+			<li>16541 - +2 02 33318498</li>
+			<li>+2 02 37497928</li>
+			<li>info@eelu.edu.eg</li>
+		</div>
+
+		<div class="footer-col">
+			<h3>EELU Faculties</h3>
+			<li>Faculty of Computer and Information Technology</li>
+			<li>Faculty of Business Administration and Commercial Studies</li>
+			<li>Faculty of Education Studies</li>
+		</div>
+
+		<div class="copyright">
+			<p>
+				Copyright © 2023 The National Egyptian E-learning University - EELU 
+			</p>
+			<div class="pro-links">
+				<div class="pro-links">
+          
+					<a href="https://www.facebook.com/egyptelu/" target="_blank"><i class="fab fa-facebook"></i></a> 
+					<a href="https://www.youtube.com/channel/UC6414bV4sgqhNH7vgEAs_TA" target="_blank"><i class="fab fa-youtube"></i></a>
+					<a href="https://twitter.com/EgyptElu" target="_blank"><i class="fab fa-twitter"></i></a>
+							</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+	
+<script>
+    // Show menu links on burger click
+    $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+    });
+
+    // Hide navbar on click function
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+    });
+	
+	var selectedRow = null;
+	// Form Submit Function
+	function onFormSubmit() {
+    // check validity
+    if (validate()) {
+        // store user data
+        var formData = readFormData();
+        // check empty row
+        if (selectedRow == null)
+        {
+            // Insert New User Record
+            insertNewRecord(formData);
+        }
+        else
+        {
+            // Update New User Record
+            updateRecord(formData);
+        }
+        // Reset Input Values
+        resetForm();
+    }
+}
+
+    // Get Values From Form
+    function readFormData() {
+        var formData = {};
+        // Get Values From Input
+        formData["userName"] = document.getElementById("userName").value;
+        formData["rollNo"] = document.getElementById("rollNo").value;
+        formData["stdClass"] = document.getElementById("stdClass").value;
+        formData["sid"] = document.getElementById("sid").value;
+        formData["age"] = document.getElementById("age").value;
+        // return Form Data
+        return formData;
+    }
+
+    // Insert New User Record
+    function insertNewRecord(data) {
+        var table = document.getElementById("stdlist").getElementsByTagName('tbody')[0];
+        var newRow = table.insertRow(table.length);
+        cell1 = newRow.insertCell(0);
+        cell1.innerHTML = data.userName;
+        cell2 = newRow.insertCell(1);
+        cell2.innerHTML = data.rollNo;
+        cell3 = newRow.insertCell(2);
+        cell3.innerHTML = data.stdClass;
+        cell4 = newRow.insertCell(3);
+        cell4.innerHTML = data.sid;
+        cell5 = newRow.insertCell(4);
+        cell5.innerHTML = data.age;
+        cell6 = newRow.insertCell(5);
+        cell6.innerHTML = `<a onClick="onEdit(this)">Edit</a>
+                           <a onClick="onDelete(this)">Delete</a>`;
+						   
+		// update localStorage
+		localStorage.setItem('students', JSON.stringify(getTableData()));
+    }
+	
+	// Get all table data as an array
+function getTableData() {
+    var table = document.getElementById("stdlist").getElementsByTagName('tbody')[0];
+    var data = [];
+    for (var i = 0, row; row = table.rows[i]; i++) {
+        var rowData = {
+            userName: row.cells[0].innerHTML,
+            rollNo: row.cells[1].innerHTML,
+            stdClass: row.cells[2].innerHTML,
+            sid: row.cells[3].innerHTML,
+            age: row.cells[4].innerHTML,
+        };
+        data.push(rowData);
+    }
+    return data;
+}
+
+    // Reset Form
+    function resetForm() {
+        document.getElementById("userName").value = "";
+        document.getElementById("rollNo").value = "";
+        document.getElementById("stdClass").value = "";
+        document.getElementById("sid").value = "";
+        document.getElementById("age").value = "";
+        selectedRow = null;
+    }
+
+    // Edit User Record
+    function onEdit(td) {
+        selectedRow = td.parentElement.parentElement;
+        document.getElementById("userName").value = selectedRow.cells[0].innerHTML;
+        document.getElementById("rollNo").value = selectedRow.cells[1].innerHTML;
+        document.getElementById("stdClass").value = selectedRow.cells[2].innerHTML;
+        document.getElementById("sid").value = selectedRow.cells[3].innerHTML;
+        document.getElementById("age").value = selectedRow.cells[4].innerHTML;
+    }
+
+    // Update User Record
+    function updateRecord(formData) {
+        selectedRow.cells[0].innerHTML = formData.userName;
+        selectedRow.cells[1].innerHTML = formData.rollNo;
+        selectedRow.cells[2].innerHTML = formData.stdClass;
+        selectedRow.cells[3].innerHTML = formData.sid;
+        selectedRow.cells[4].innerHTML = formData.age;
+		// update localStorage
+		localStorage.setItem('students', JSON.stringify(getTableData()));
+    }
+
+    // Delete User Record
+	function onDelete(td) {
+    if (confirm('Are you sure to delete this record ?')) {
+        row = td.parentElement.parentElement;
+        document.getElementById("stdlist").deleteRow(row.rowIndex);
+        resetForm();
+		// update localStorage
+        localStorage.setItem('students', JSON.stringify(getTableData()));
+    }
+}
+	window.onload = function () {
+    // Populate table with localStorage data
+    var students = JSON.parse(localStorage.getItem('students'));
+    if (students && students.length > 0) {
+        var table = document.getElementById("stdlist").getElementsByTagName('tbody')[0];
+        for (var i = 0; i < students.length; i++) {
+            var student = students[i];
+            var newRow = table.insertRow(table.length);
+            newRow.insertCell(0).innerHTML = student.userName;
+            newRow.insertCell(1).innerHTML = student.rollNo;
+            newRow.insertCell(2).innerHTML = student.stdClass;
+            newRow.insertCell(3).innerHTML = student.sid;
+            newRow.insertCell(4).innerHTML = student.age;
+            newRow.insertCell(5).innerHTML = `<a onClick="onEdit(this)">Edit</a>
+                                               <a onClick="onDelete(this)">Delete</a>`;
+        }
+    }
+}
+
+    // Check User validation
+    function validate() {
+        var isValid = true;
+        // userName validation
+        if (document.getElementById("userName").value == "") {
+            isValid = false;
+            document.getElementById("userNamevalidationError").classList.remove("hide");
+        } else {
+            isValid = true;
+            if (!document.getElementById("userNamevalidationError").classList.contains("hide"))
+			{
+                document.getElementById("userNamevalidationError").classList.add("hide");
+            }
+        }
+		
+        // Roll No validation
+        if (document.getElementById("rollNo").value == "") {
+            isValid = false;
+            document.getElementById("rollNovalidationError").classList.remove("hide");
+        } else {
+            isValid = true;
+            if (!document.getElementById("rollNovalidationError").classList.contains("hide")) {
+                document.getElementById("rollNovalidationError").classList.add("hide");
+            }
+        }
+		
+        // Std class validation
+        if (document.getElementById("stdClass").value == "") {
+            isValid = false;
+            document.getElementById("stdClassvalidationError").classList.remove("hide");
+        } else {
+            isValid = true;
+            if (!document.getElementById("stdClassvalidationError").classList.contains("hide")) {
+                document.getElementById("stdClassvalidationError").classList.add("hide");
+            }
+        }
+		
+        // sid validation
+        if (document.getElementById("sid").value == "") {
+            isValid = false;
+            document.getElementById("sidvalidationError").classList.remove("hide");
+        } else {
+            isValid = true;
+            if (!document.getElementById("sidvalidationError").classList.contains("hide")) {
+                document.getElementById("sidvalidationError").classList.add("hide");
+            }
+        }
+		
+        // Age validation
+        if (document.getElementById("age").value == "") {
+            isValid = false;
+            document.getElementById("agevalidationError").classList.remove("hide");
+        } else {
+            isValid = true;
+            if (!document.getElementById("agevalidationError").classList.contains("hide")) {
+                document.getElementById("agevalidationError").classList.add("hide");
+            }
+        }
+        return isValid;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="contact.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="https://moodlelms.eelu.edu.eg/pluginfile.php/1/theme_moove/logo/1664272633/LOGO%20EELU%202019-04.png" class="logo" alt="" style="width:80px;height:70px;">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="Register.html">Register</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="Student_Information.html">Student Information</a></li>
+				<li><a href="contact.html" class="active">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			Contact Us
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+
+	<section id="contact">
+		<div class="getin">
+			<h2>Get in touch</h2>
+			<p>Looking for help? Fill the form and start a new adventure.</p>
+
+			<div class="getin-details">
+				<h3>Headquaters</h3>
+				<div>
+					<i class="fa-solid fa-map get"></i>
+					<p>33 El Messaha Street, Dokki, Giza Governorate, Egypt</p>
+				</div>
+
+				<h3>Phone</h3>
+				<div>
+					<i class="fas fa-phone-alt get"></i>
+					<p>  33318498 02 2+ <br> 16541</p>
+				</div>
+
+				<h3>Support</h3>
+				<div>
+					<i class="fa-solid fa-envelope get"></i>
+					<p>info@eelu.edu.e </p>
+				</div>
+
+				<h3>Follow Us</h3>
+				<div class="pro-links">
+					
+<a href="https://www.facebook.com/egyptelu/" target="_blank"><i class="fab fa-facebook"></i></a> 
+<a href="https://www.youtube.com/channel/UC6414bV4sgqhNH7vgEAs_TA" target="_blank"><i class="fab fa-youtube"></i></a>
+<a href="https://twitter.com/EgyptElu" target="_blank"><i class="fab fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="form">
+			<h4>Let's Connect</h4>
+			<div class="form-row">
+				<input type="text" placeholder="Your Name">
+				<input type="email" placeholder="Your Email">
+			</div>
+			<div class="form-col">
+				<input type="text" placeholder="Subject line...">
+			</div>
+			
+			<div class="form-col">
+				
+					<form id="myform" onsubmit="return handle_form_submission()">
+					<input type="text" name='message' id='message' placeholder='message'/>
+					  <button type='submit'>send message</button>
+					</form>
+					</div>
+	</section>
+
+	<!-- Footer section starts from here -->
+   <footer>
+	<section id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d110536.99674729865!2d31.220311999999996!3d30.028791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145846d557df2d6f%3A0x8b349b4d757b823a!2sThe%20Egyptian%20E-learning%20University!5e0!3m2!1sen!2seg!4v1682627556297!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+    <div class="footer-col">
+      <h3>Contact information</h3>
+      <li>33 El Messaha Street,Dokki, Giza Governorate, Egypt</li>
+      <li>P.O Box 12611</li>
+      <li>16541 - +2 02 33318498</li>
+      <li>+2 02 37497928</li>
+      <li>info@eelu.edu.eg</li>
+    </div>
+
+    <div class="footer-col">
+      <h3>EELU Faculties</h3>
+      <li>Faculty of Computer and Information Technology</li>
+      <li>Faculty of Business Administration and Commercial Studies</li>
+      <li>Faculty of Education Studies</li>
+    </div>
+
+
+
+    <div class="copyright">
+      <p>
+        Copyright © 2023 The National Egyptian E-learning University - EELU 
+      </p>
+      <div class="pro-links">
+					
+		<a href="https://www.facebook.com/egyptelu/" target="_blank"><i class="fab fa-facebook"></i></a> 
+		<a href="https://www.youtube.com/channel/UC6414bV4sgqhNH7vgEAs_TA" target="_blank"><i class="fab fa-youtube"></i></a>
+		<a href="https://twitter.com/EgyptElu" target="_blank"><i class="fab fa-twitter"></i></a>
+						</div>
+    </div>
+  </footer>
+  <!-- Footer section ends from here -->
+
+  <script>
+    // Show menu links on burger click
+    $('#menu-btn').click(function(){
+      $('nav .navigation ul').addClass('active')
+    });
+
+    // Hide navbar on click function
+    $('#menu-close').click(function(){
+      $('nav .navigation ul').removeClass('active')
+    });
+	function handle_form_submission()
+{
+  alert('The message was sent successfully');
+  return false; 
+}
+  </script>
+</body>
+</html>
